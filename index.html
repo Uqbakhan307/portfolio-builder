@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ede4">
+  <meta name="description" content="A free, private browser toolkit and portfolio builder for fresher developers.">
+  <title>DevNest — your developer journey, in one place</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='13' fill='%231f5f63'/%3E%3Ctext x='7' y='26' font-size='17' fill='%23f3ede4' font-family='monospace'%3E%26lt;%3E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="DevNest home"><span class="brand-mark">&lt;/&gt;</span>devnest</a>
+      <nav class="nav-links" id="main-nav" aria-label="Main navigation"><a href="#tools">Tools</a><a href="#portfolio">Portfolio builder</a><a href="#roadmaps">Roadmaps</a></nav>
+      <div class="nav-actions">
+        <a class="button small nav-cta" href="#tools">Explore tools <span aria-hidden="true">→</span></a>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-testid="theme-toggle">◐</button>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      </div>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><span class="eyebrow">A little place to begin</span><h1 id="hero-title">Build your developer journey, <em>one step at a time.</em></h1><p>Useful tools for the things you’re learning, and a portfolio you can make your own. No sign-up. No cost. Just open the nest and get building.</p><div class="hero-actions"><a class="button" href="#tools" data-testid="hero-tools-link">Explore tools <span aria-hidden="true">↘</span></a><a class="button secondary" href="#portfolio" data-testid="hero-portfolio-link">Create portfolio <span aria-hidden="true">↘</span></a></div><div class="hero-note">FREE TO USE &nbsp;·&nbsp; PRIVATE BY DESIGN &nbsp;·&nbsp; YOURS TO KEEP</div></div>
+      <div class="hero-art" aria-hidden="true"><div class="arch-halo"></div><div class="arch"><div class="arch-door"><div class="door-light"></div></div></div><div class="dome one"></div><div class="dome two"></div>
+        <svg class="palm" viewBox="0 0 100 180"><path d="M51 178 Q47 111 55 51 M55 57 Q19 42 8 54 Q31 58 50 68 M55 57 Q31 24 18 23 Q34 43 55 63 M56 55 Q48 15 59 5 Q66 29 60 58 M57 57 Q78 18 91 19 Q82 43 58 64 M57 60 Q96 44 99 57 Q80 66 56 68" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="palm left" viewBox="0 0 100 180"><path d="M51 178 Q47 111 55 51 M55 57 Q19 42 8 54 Q31 58 50 68 M55 57 Q31 24 18 23 Q34 43 55 63 M56 55 Q48 15 59 5 Q66 29 60 58 M57 57 Q78 18 91 19 Q82 43 58 64 M57 60 Q96 44 99 57 Q80 66 56 68" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="code-mark a">&lt;/&gt;</span><span class="code-mark b">{ }</span><svg class="lantern" viewBox="0 0 44 58"><path d="M22 2v6M14 8h16l-3 7H17l-3-7ZM17 15h10l7 27H10l7-27ZM15 48h14M19 54h6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 22h8l4 15H14l4-15Z" fill="currentColor" opacity=".42"/></svg>
+      </div>
+    </section>
+    <section class="section wrap" id="tools" aria-labelledby="tools-title">
+      <svg class="ribbon" viewBox="0 0 1000 1200" preserveAspectRatio="none" aria-hidden="true"><path d="M20 10 C180 100 810 90 940 210 S900 380 690 410 140 400 90 550 260 710 490 720 950 690 920 850 720 990 510 1020 250 1000 200 1160" pathLength="1"/></svg>
+      <div class="section-head reveal"><span class="section-kicker">Your workbench</span><h2 id="tools-title">Small tools. Big “aha” moments.</h2><p>Handy browser tools for everyday building. Your text and images stay right here on your device.</p></div>
+      <div class="tools-grid">
+        <button class="clay-card tool-card reveal" type="button" data-tool="json" data-testid="tool-json"><span class="tool-icon">{ }</span><h3>JSON formatter</h3><p>Make messy JSON readable. Catch syntax slips.</p><span class="tool-arrow">↗</span></button>
+        <button class="clay-card tool-card reveal" type="button" data-tool="regex" data-testid="tool-regex"><span class="tool-icon">.*</span><h3>Regex tester</h3><p>Try a pattern and see every match in context.</p><span class="tool-arrow">↗</span></button>
+        <button class="clay-card tool-card reveal" type="button" data-tool="color" data-testid="tool-color"><span class="tool-icon">#</span><h3>Color picker</h3><p>Pick a color, then spin up a useful palette.</p><span class="tool-arrow">↗</span></button>
+        <button class="clay-card tool-card reveal" type="button" data-tool="password" data-testid="tool-password"><span class="tool-icon">•••</span><h3>Password maker</h3><p>Generate a strong random password locally.</p><span class="tool-arrow">↗</span></button>
+        <button class="clay-card tool-card reveal" type="button" data-tool="counter" data-testid="tool-counter"><span class="tool-icon">Aa</span><h3>Word counter</h3><p>Count words, characters, and lines as you write.</p><span class="tool-arrow">↗</span></button>
+        <button class="clay-card tool-card reveal" type="button" data-tool="base64" data-testid="tool-base64"><span class="tool-icon">64</span><h3>Base64 helper</h3><p>Encode or decode Unicode text safely.</p><span class="tool-arrow">↗</span></button>
+        <button class="clay-card tool-card reveal" type="button" data-tool="image" data-testid="tool-image"><span class="tool-icon">▧</span><h3>Image sizer</h3><p>Resize and compress an image, then download it.</p><span class="tool-arrow">↗</span></button>
+      </div>
+    </section>
+    <section class="section wrap" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="section-head reveal"><span class="section-kicker">Show what you can do</span><h2 id="portfolio-title">Your portfolio, your first little corner of the web.</h2><p>Fill in the details and watch your page take shape. Download a standalone HTML file when it feels like you.</p></div>
+      <div class="portfolio">
+        <form class="clay-card builder reveal" id="portfolio-form" autocomplete="on">
+          <h3>Make it yours</h3>
+          <div class="field"><label for="p-photo">Profile photo</label><input id="p-photo" name="photo" type="file" accept="image/*" data-testid="portfolio-photo"><span class="field-hint">Processed as a compact JPEG, up to 600px.</span></div>
+          <div class="field"><label for="p-name">Full name</label><input id="p-name" name="name" autocomplete="name" placeholder="Your name" data-testid="portfolio-name"></div>
+          <div class="field"><label for="p-title">Professional title</label><input id="p-title" name="title" placeholder="Frontend developer"></div>
+          <div class="field"><label for="p-about">About me</label><textarea id="p-about" name="about" placeholder="A short introduction about you..."></textarea></div>
+          <div class="field"><label for="p-skills">Skills <span class="field-hint">(comma separated)</span></label><input id="p-skills" name="skills" placeholder="HTML, CSS, JavaScript"></div>
+          <h4>Contact details</h4>
+          <div class="form-row"><div class="field"><label for="p-phone">Phone number</label><input id="p-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 4567"></div><div class="field"><label for="p-whatsapp">WhatsApp number</label><input id="p-whatsapp" name="whatsapp" type="tel" placeholder="+1 555 123 4567"></div></div>
+          <div class="field"><label for="p-email">Email</label><input id="p-email" name="email" type="email" autocomplete="email" placeholder="hello@example.com"></div>
+          <div class="form-row"><div class="field"><label for="p-github">GitHub URL</label><input id="p-github" name="github" type="url" placeholder="github.com/you"></div><div class="field"><label for="p-linkedin">LinkedIn URL</label><input id="p-linkedin" name="linkedin" type="url" placeholder="linkedin.com/in/you"></div></div>
+          <div class="projects-editor"><div class="projects-editor-head"><h4>Projects</h4><button class="button secondary small" type="button" id="add-project" data-testid="add-project">+ Add project</button></div><div id="projects-list"></div></div>
+          <div class="field"><label for="p-theme">Portfolio theme</label><select id="p-theme" name="theme"><option value="teal">Clay Teal</option><option value="gold">Clay Gold</option><option value="dark">Dark Clay</option></select></div>
+          <div class="portfolio-actions"><button class="button gold" type="button" id="download-portfolio" data-testid="portfolio-download">Download portfolio <span aria-hidden="true">↓</span></button><button class="button danger small" type="button" id="clear-portfolio" data-testid="portfolio-clear">Clear all</button></div>
+          <p class="storage-status" id="portfolio-feedback" aria-live="polite" role="status"></p>
+        </form>
+        <div class="clay-card preview reveal" aria-label="Live portfolio preview"><div class="preview-top"><h3>Live preview</h3><span class="field-hint">Updates as you type</span></div><article class="preview-sheet" id="portfolio-preview" data-testid="portfolio-preview" aria-live="polite"></article></div>
+      </div>
+    </section>
+    <section class="section wrap" id="roadmaps" aria-labelledby="roadmaps-title">
+      <div class="section-head reveal"><span class="section-kicker">A path, not a race</span><h2 id="roadmaps-title">Pick a trail. Take the next step.</h2><p>Three practical starting points to turn “where do I begin?” into a plan you can follow.</p></div>
+      <div class="roadmap-grid">
+        <article class="clay-card roadmap-card reveal"><span class="roadmap-label">PATH 01 / THE WEB</span><h3>Web developer</h3><ol><li>Build semantic pages with HTML</li><li>Style responsive layouts with CSS</li><li>Learn JavaScript fundamentals</li><li>Make projects with APIs and forms</li><li>Use Git, deploy, and share your work</li></ol></article>
+        <article class="clay-card roadmap-card reveal"><span class="roadmap-label">PATH 02 / PYTHON</span><h3>Python builder</h3><ol><li>Learn values, variables, and control flow</li><li>Practice functions and collections</li><li>Read and write files; handle errors</li><li>Build a CLI project with a small library</li><li>Test your code and publish a project</li></ol></article>
+        <article class="clay-card roadmap-card reveal"><span class="roadmap-label">PATH 03 / ANDROID</span><h3>Android developer</h3><ol><li>Learn Kotlin basics and null safety</li><li>Build a screen with Jetpack Compose</li><li>Manage state and app navigation</li><li>Fetch data and persist it locally</li><li>Test, polish, and ship a small app</li></ol></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-row"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span>devnest</a><p><svg class="footer-lantern" viewBox="0 0 44 58" aria-hidden="true"><path d="M22 2v6M14 8h16l-3 7H17l-3-7ZM17 15h10l7 27H10l7-27ZM15 48h14M19 54h6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 22h8l4 15H14l4-15Z" fill="currentColor" opacity=".42"/></svg>Made with ❤️ for freshers</p><a href="#home">Back to the top ↑</a></div></footer>
+  <div class="modal" id="tool-modal" role="dialog" aria-modal="true" aria-labelledby="tool-title" aria-hidden="true"><section class="tool-panel"><div class="modal-head"><div><h2 id="tool-title">Tool</h2><p id="tool-description"></p></div><button class="close-modal" type="button" aria-label="Close tool" data-testid="tool-close">×</button></div><div id="tool-content"></div><p class="feedback" id="tool-feedback" aria-live="polite" role="status"></p></section></div>
+</body>
+</html>
